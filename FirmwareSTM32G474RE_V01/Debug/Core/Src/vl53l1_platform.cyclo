@@ -1,0 +1,13 @@
+../Core/Src/vl53l1_platform.c:57:6:VL53L1_SelectI2C	2
+../Core/Src/vl53l1_platform.c:66:8:VL53L1_RdByte	1
+../Core/Src/vl53l1_platform.c:73:8:VL53L1_RdWord	2
+../Core/Src/vl53l1_platform.c:82:8:VL53L1_RdDWord	2
+../Core/Src/vl53l1_platform.c:91:8:VL53L1_ReadMulti	1
+../Core/Src/vl53l1_platform.c:98:8:VL53L1_WrByte	1
+../Core/Src/vl53l1_platform.c:105:8:VL53L1_WrWord	1
+../Core/Src/vl53l1_platform.c:113:8:VL53L1_WrDWord	1
+../Core/Src/vl53l1_platform.c:121:8:VL53L1_WriteMulti	1
+../Core/Src/vl53l1_platform.c:165:9:VL53L1__Init	4
+../Core/Src/vl53l1_platform.c:211:9:VL53L1__GetDistance	8
+../Core/Src/vl53l1_platform.c:250:9:VL53L1__SetTimingBudget	1
+../Core/Src/vl53l1_platform.c:266:9:VL53L1__SetDistanceMode	1

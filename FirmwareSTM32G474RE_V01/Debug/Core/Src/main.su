@@ -1,0 +1,12 @@
+../Core/Src/main.c:240:6:user_delay_us	8	static
+../Core/Src/main.c:332:16:TOF_Init_Fail	8	static
+../Core/Src/main.c:261:9:user_spi_read	16	static
+../Core/Src/main.c:274:9:user_spi_write	16	static
+../Core/Src/main.c:245:9:spi2Transfer	0	static
+../Core/Src/main.c:293:6:WriteFLASH_all_Parameters	24	static,ignoring_inline_asm
+../Core/Src/main.c:1051:6:SystemClock_Config	88	static,ignoring_inline_asm
+../Core/Src/main.c:563:5:main	216	static,ignoring_inline_asm
+../Core/Src/main.c:2072:6:HAL_UART_ErrorCallback	16	static
+../Core/Src/main.c:2141:6:HAL_UART_TxCpltCallback	8	static
+../Core/Src/main.c:2199:6:HAL_UARTEx_RxEventCallback	16	static
+../Core/Src/main.c:2274:6:Error_Handler	0	static,ignoring_inline_asm

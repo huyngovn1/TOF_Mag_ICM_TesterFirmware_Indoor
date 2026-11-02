@@ -1,0 +1,38 @@
+#define HMC5883_ADDR	(0x1E << 1)
+#define XAXIS    0
+#define YAXIS    1
+#define ZAXIS    2
+	
+//I2C address
+#define QMC5883L_ADDR			(0x0D <<1)
+#define	MPU6050_ADDR						MPU6050_ADDR_7bit<<1
+#define HMC5883L_ADDR						0x1E
+// Registers
+#define MPU6050_RA_PWR_MGMT_1 	0x6B
+#define MPU6050_RA_PWR_MGMT_2 	0x6C
+#define MPU6050_RA_CONFIG 			0x1A
+#define MPU6050_RA_SMPLRT_DIV 	0x19
+#define MPU6050_RA_GYRO_CONFIG 	0x1B
+#define MPU6050_RA_ACCEL_CONFIG 0x1C
+#define MAG_DATA_REGISTER 			0x03
+	
+#define HMC5883_CONFIG_REG_A    0x00
+#define HMC5883_CONFIG_REG_B    0x01
+#define HMC5883_MODE_REG        0x02
+#define HMC5883_DATA_X_MSB_REG  0x03
+#define HMC5883_STATUS_REG      0x09HMC5883.h
+
+
+
+#define HMC5883l_ADD_DATAX_MSB (0x03)
+#define HMC5883l_ADD_DATAX_LSB (0x04)
+#define HMC5883l_ADD_DATAZ_MSB (0x05)
+#define HMC5883l_ADD_DATAZ_LSB (0x06)
+#define HMC5883l_ADD_DATAY_MSB (0x07)
+#define HMC5883l_ADD_DATAY_LSB (0x08)
+#define HMC5883l_ADD_DATAX_MSB_MULTI (HMC5883l_ADD_DATAX_MSB | 0x80)
+#define HMC5883l_ADD_DATAY_MSB_MULTI (HMC5883l_ADD_DATAY_MSB | 0x80)
+#define HMC5883l_ADD_DATAZ_MSB_MULTI (HMC5883l_ADD_DATAZ_MSB | 0x80) 
+
+void QMC5883_Get_Values(signed short int *mag);
+void QMC5883_Init(void);

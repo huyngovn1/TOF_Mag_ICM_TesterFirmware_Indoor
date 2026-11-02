@@ -1,0 +1,2 @@
+../Core/Src/Global.c:11:7:getAltitude	24	static
+../Core/Src/Global.c:15:9:RingLimit	0	static
