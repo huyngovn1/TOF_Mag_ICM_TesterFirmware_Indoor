@@ -1,3 +1,0 @@
-../Core/Src/MyAHRS.c:144:6:AHRSupdateIMU	72	static
-../Core/Src/MyAHRS.c:34:6:AHRSupdate	192	static
-../Core/Src/MyAHRS.c:226:7:invSqrt	0	static

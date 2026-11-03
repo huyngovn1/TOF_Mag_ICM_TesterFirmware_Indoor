@@ -750,6 +750,75 @@ int main(void)
     		}*/
 
 	while(1){
+				static uint8_t MotorTestDone = 0;
+
+				if (MotorTestDone == 0)
+				{
+				    MotorTestDone = 1;
+
+				    // Ga thap nhat - cho ESC arm
+				    TIM1->CCR1 = 4000;
+				    TIM1->CCR2 = 4000;
+				    TIM1->CCR3 = 4000;
+				    TIM1->CCR4 = 4000;
+				    HAL_Delay(3000);
+
+				    // M1 quay 1 giay
+				    TIM1->CCR1 = 4600;
+				    HAL_Delay(1000);
+				    TIM1->CCR1 = 4000;
+				    HAL_Delay(300);
+
+				    // M2 quay 1 giay
+				    TIM1->CCR2 = 4600;
+				    HAL_Delay(1000);
+				    TIM1->CCR2 = 4000;
+				    HAL_Delay(300);
+
+				    // M3 quay 1 giay
+				    TIM1->CCR4 = 4600;
+				    HAL_Delay(1000);
+				    TIM1->CCR4 = 4000;
+				    HAL_Delay(300);
+
+				    // M4 quay 1 giay
+				    TIM1->CCR3 = 4600;
+				    HAL_Delay(1000);
+				    TIM1->CCR3 = 4000;
+				    HAL_Delay(500);
+
+				    // 4 MOTOR TANG GA DAN
+				    for (uint16_t pwm = 4600; pwm <= 5300; pwm += 20)
+				    {
+				        TIM1->CCR1 = pwm;
+				        TIM1->CCR2 = pwm;
+				        TIM1->CCR3 = pwm;
+				        TIM1->CCR4 = pwm;
+
+				        HAL_Delay(30);
+				    }
+
+				    // Giu ga cao 0.5 giay
+				    HAL_Delay(5000);
+
+				    // 4 MOTOR HA GA DAN
+				    for (int32_t pwm = 5300; pwm >= 4000; pwm -= 20)
+				    {
+				        TIM1->CCR1 = pwm;
+				        TIM1->CCR2 = pwm;
+				        TIM1->CCR3 = pwm;
+				        TIM1->CCR4 = pwm;
+
+				        HAL_Delay(30);
+				    }
+
+				    // DUNG CA 4 MOTOR
+				    TIM1->CCR1 = 4000;
+				    TIM1->CCR2 = 4000;
+				    TIM1->CCR3 = 4000;
+				    TIM1->CCR4 = 4000;
+				}
+
 	    // Dieu khien 4 dong co
 		  if( SPI_ByteRead(DATA_RDY_INT)){ //1600Hz
 			      SPI_BytesRead(0x09,16,ImuData);

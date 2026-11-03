@@ -1,3 +1,0 @@
-../Core/Src/QMC5883.c:6:6:DelayHMC	3
-../Core/Src/QMC5883.c:16:6:QMC5883_Init	3
-../Core/Src/QMC5883.c:32:6:QMC5883_Get_Values	3

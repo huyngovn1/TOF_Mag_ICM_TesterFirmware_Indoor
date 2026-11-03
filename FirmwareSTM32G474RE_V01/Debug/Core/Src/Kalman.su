@@ -1,3 +1,0 @@
-../Core/Src/Kalman.c:20:6:KalmanAHRS_Update	120	static
-../Core/Src/Kalman.c:67:8:Kalman_getAngle	96	static
-../Core/Src/Kalman.c:96:8:KalmanFiller	0	static

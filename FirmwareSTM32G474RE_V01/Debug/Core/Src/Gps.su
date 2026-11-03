@@ -1,6 +1,0 @@
-../Core/Src/Gps.c:87:6:M10N_GPS_Config	8	static
-../Core/Src/Gps.c:190:6:CheckSum	4	static
-../Core/Src/Gps.c:200:9:Parse_And_Update_PVT	16	static
-../Core/Src/Gps.c:231:9:AirLinkEcoder	8	static
-../Core/Src/Gps.c:256:9:AirLinkDecoder	64	static
-../Core/Src/Gps.c:304:9:CheckEndRtkPacket	0	static

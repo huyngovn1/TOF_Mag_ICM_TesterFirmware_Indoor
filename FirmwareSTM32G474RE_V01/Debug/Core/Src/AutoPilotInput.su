@@ -1,5 +1,0 @@
-../Core/Src/AutoPilotInput.c:29:6:CompassCab	40	static
-../Core/Src/AutoPilotInput.c:82:6:CompassCabInLoop	0	static
-../Core/Src/AutoPilotInput.c:86:6:MagUpdateAngle	0	static
-../Core/Src/AutoPilotInput.c:92:9:XyPosition3Sensors	0	static
-../Core/Src/AutoPilotInput.c:107:9:XyPosition3Sensors2	24	static
